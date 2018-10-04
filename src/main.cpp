@@ -36,3 +36,25 @@ int getTriangleType(int a, int b, int c) {
     }
     return -3;
 }
+
+int getcircleType(int a , int b , int c){
+
+    if(a+b<=c)
+    {
+        return 10 ;
+    }
+    else if(a * a + b * b == c * c)
+    {
+        return 0 ;
+    }
+    else if(a * a + b * b > c * c)
+    {
+        return 5 ;
+    }
+    else if(a * a + b * b < c * c)
+    {
+        return -1 ;
+    }
+
+    return 3 ;
+}
